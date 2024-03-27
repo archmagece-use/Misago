@@ -31,6 +31,7 @@ ADD plugins /app/plugins
 WORKDIR /app/
 
 # Install Misago requirements
+# FIXME 1 POETRY_VIRTUALENVS_CREATE=false poetry install --only main --no-cache --no-interaction
 RUN pip install --upgrade pip poetry && \
     poetry export --without-hashes --format=requirements.txt > requirements.txt && \
     pip install -r /app/requirements.txt && \
