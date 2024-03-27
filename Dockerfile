@@ -22,14 +22,19 @@ RUN apt-get update && apt-get install -y \
 
 # Add files and dirs for build step
 ADD dev /app/dev
-ADD requirements.txt /app/requirements.txt
+ADD pyproject.toml /app/pyproject.toml
+ADD poetry.toml /app/poetry.toml
+ADD poetry.lock /app/poetry.lock
+#ADD requirements.txt /app/requirements.txt
 ADD plugins /app/plugins
 
 WORKDIR /app/
 
 # Install Misago requirements
-RUN pip install --upgrade pip && \
+RUN pip install --upgrade pip poetry && \
+    poetry export --without-hashes --format=requirements.txt > requirements.txt && \
     pip install -r /app/requirements.txt && \
+#    poetry install && \
     pip install pip-tools
 
 # Bootstrap plugins

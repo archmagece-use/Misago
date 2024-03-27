@@ -96,6 +96,7 @@ vine = "5.1.0"
 wcwidth = "0.2.13"
 webencodings = "0.5.1"
 webservices = { version = "0.7", extras = ["django"] }
+social-auth-app-django = "^5.4.0"
 
 [build-system]
 requires = ["poetry-core"]

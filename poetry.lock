@@ -1387,6 +1387,21 @@ files = [
 ]
 
 [[package]]
+name = "social-auth-app-django"
+version = "5.4.0"
+description = "Python Social Authentication, Django integration."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "social-auth-app-django-5.4.0.tar.gz", hash = "sha256:09ac02a063cb313eed5e9ef2f9ac4477c8bf5bbd685925ff3aba43f9072f1bbb"},
+    {file = "social_auth_app_django-5.4.0-py3-none-any.whl", hash = "sha256:28c65b2e2092f30cdb3cf912eeaa6988b49fdf4001b29bd89e683673d700a38e"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+social-auth-core = ">=4.4.1"
+
+[[package]]
 name = "social-auth-core"
 version = "4.5.2"
 description = "Python social authentication made simple."
@@ -1566,4 +1581,4 @@ twisted = ["twisted"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "a8ad4b169a5a6281c1b1c797c790a3e0ac8b859bd10813da016b7e468bc7be05"
+content-hash = "d26a123d4da48804168828a536aeb5fc3dae6f02a15509ebdf6e52cd96ebdd27"
