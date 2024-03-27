@@ -1,0 +1,102 @@
+[tool.poetry]
+name = "Misago"
+version = "0.40.0"
+authors = [
+    "Rafał Pitoń <kontakt@rpiton.com>",
+    "CEE <archmagece@users.noreply.github.com>",
+]
+description = "Misago is modern, fully featured forum application written in Python and ES6, powered by Django and React.js. It works out of the box and can be run alone or be connected to existing site with built in OAuth 2 client."
+readme = "README.md"
+license = "GPLv2"
+homepage = "http://www.misago-project.org"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ariadne = "0.22"
+amqp = "5.2.0"
+anyio = "4.2.0"
+ariadne-django = "0.3.0"
+asgiref = "3.7.2"
+billiard = "4.2.0"
+black = "24.1.1"
+celery = { version = "5.3.6", extras = ["redis"] }
+certifi = "2024.2.2"
+cffi = "1.16.0"
+charset-normalizer = "3.3.2"
+click = "8.1.7"
+click-didyoumean = "0.3.0"
+click-plugins = "1.1.1"
+click-repl = "0.3.0"
+coverage = { version = "6.5.0", extras = ["toml"] }
+coveralls = "3.3.1"
+cryptography = "42.0.2"
+defusedxml = "0.8.0rc2"
+django = "4.2.10"
+django-debug-toolbar = "4.3.0"
+django-js-asset = "2.2.0"
+django-mptt = "0.16.0"
+django-simple-sso = "1.2.0"
+djangorestframework = "3.14.0"
+docopt = "0.6.2"
+faker = "23.1.0"
+graphql-core = "3.2.3"
+html5lib = "1.1"
+idna = "3.6"
+iniconfig = "2.0.0"
+itsdangerous = "0.24"
+kombu = "5.3.5"
+markdown = "3.5.2"
+mypy-extensions = "1.0.0"
+oauthlib = "3.2.2"
+packaging = "23.2"
+pathspec = "0.12.1"
+pillow = "10.2.0"
+platformdirs = "4.2.0"
+pluggy = "1.4.0"
+prompt-toolkit = "3.0.43"
+psycopg = { version = "3.1.18", extras = ["binary"] }
+psycopg-binary = "3.1.18"
+pycparser = "2.21"
+pygments = "2.17.2"
+pyjwt = "2.8.0"
+pytest = "8.0.0"
+pytest-cov = "4.1.0"
+pytest-django = "4.8.0"
+pytest-mock = "3.12.0"
+python-dateutil = "2.8.2"
+python3-openid = "3.2.0"
+pytz = "2024.1"
+pyyaml = "6.0.1"
+social-auth-core = "4.5.2"
+sqlparse = "0.4.4"
+starlette = "0.37.1"
+syrupy = "4.6.1"
+typing-extensions = "4.9.0"
+tzdata = "2023.4"
+unidecode = "1.3.8"
+urllib3 = "2.2.0"
+vine = "5.1.0"
+wcwidth = "0.2.13"
+webencodings = "0.5.1"
+webservices = { version = "0.7", extras = ["django"] }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
